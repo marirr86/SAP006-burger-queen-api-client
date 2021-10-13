@@ -1,0 +1,70 @@
+* , body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+:root,
+#root {
+  /*width: 100%;
+  margin: 0;
+  padding: 0;*/
+  --red-error: rgba(226, 57, 57, 0.8);
+  --drop-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --inner-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+button {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 10px;
+  box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #f1bcab;;
+  padding: 2%;
+  font-size: 100%;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+.endButtons{
+ display: flex;
+ justify-content: space-evenly;
+ width: 100%;
+ padding: 15% 0 0 0;
+}
+.btnCancel, .btnConfirm{
+  padding: 3%;
+  font-size: 100%;
+}
+.resetInput{
+  border: none;
+  background: #c1c1c1b7;
+  width: 100%;
+  border-radius: 30px;
+  padding: 1%;
+  font-size: 100%;
+  font-weight: 600;
+  color:#000;
+}
+.resetInput::placeholder{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+.inputLogin{
+  display: flex;
+  width: 60%;
+  padding: 1%;
+}
+.inputGlobal {
+  width: 60%;
+  border-radius: 10px;
+  border: solid 3px rgba(214, 211, 38, 0.8);
+  padding: 1%;
+}
+.inputGlobal::placeholder{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #959AA9;
+}
