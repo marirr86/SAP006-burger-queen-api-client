@@ -50,15 +50,15 @@ export function InputLogin({
   );
 }
 
-export function InputGlobal({
+export function Input({
   inputName,
   dataInput,
   inputOnChange,
   inputValue,
-  inputGlobalId,
+  inputId,
   inputClassName,
-  inputGlobalType,
-  inputGlobalPlaceHolder,
+  inputType,
+  inputPlaceHolder,
   inputContentEdit,
 }) {
   return (
@@ -68,11 +68,11 @@ export function InputGlobal({
       data-item={dataInput}
       onChange={inputOnChange}
       value={inputValue}
-      id={inputGlobalId}
+      id={inputId}
       className={inputClassName}
-      type={inputGlobalType}
+      type={inputType}
       contentEditable={inputContentEdit}
-      placeholder={inputGlobalPlaceHolder}
+      placeholder={inputPlaceHolder}
     />
   );
 }

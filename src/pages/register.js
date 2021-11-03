@@ -2,8 +2,8 @@ import "../css/register.css";
 import { React,  useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Select, SelectOption } from "../components/select";
-import { InputGlobal } from "../components/inputs";
-import { ButtonCancel, ButtonConfirm } from "../components/buttons";
+import { Input } from "../components/inputs";
+import Button from "../components/buttons";
 import { refreshPage } from "../utils/simpleFunc";
 import { Navigator } from "../router/navigator";
 import { RegisterWorker } from "../services/auth";
@@ -43,44 +43,44 @@ export default function Register() {
           }
         />
         <p>nome completo</p>
-        <InputGlobal
+        <Input
           dataInput="name"
           inputOnChange={(event) => setName(event.target.value)}
           inputValue={name}
-          inputClassName="inputGlobal registerName"
-          inputGlobalType="text"
-          inputGlobalPlaceHolder="name here"
+          inputClassName="input registerName"
+          inputType="text"
+          inputPlaceHolder="name here"
           inputContentEdit="true"
         />
         <p>email</p>
-        <InputGlobal
+        <Input
           dataInput="email"
           inputOnChange={(event) => setEmail(event.target.value)}
           inputValue={email}
-          inputClassName="inputGlobal registerEmail"
-          inputGlobalType="email"
-          inputGlobalPlaceHolder="email@email.com"
+          inputClassName="input registerEmail"
+          inputType="email"
+          inputPlaceHolder="email@email.com"
           inputContentEdit="true"
         />
 
         <p>senha</p>
-        <InputGlobal
+        <Input
           dataInput="password"
           inputOnChange={(event) => setPassword(event.target.value)}
           inputValue={password}
-          inputClassName="inputGlobal registerPassword"
-          inputGlobalType="pass"
-          inputGlobalPlaceHolder="pass here"
+          inputClassName="input registerPassword"
+          inputType="pass"
+          inputPlaceHolder="pass here"
           inputContentEdit="true"
         />
 
         <div className="endButtons">
-          <ButtonCancel
+          <Button
             btnClassName="btnCancel registerExit"
             btnText="SAIR"
             btnAction={() => Navigator(history, "/")}
           />
-          <ButtonConfirm
+          <Button
             btnClassName="btnConfirm registerAdd"
             btnText="CONFIRMAR"
             btnAction={() => RegisterWorker(workerFile).then(refreshPage())}

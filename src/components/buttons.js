@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ButtonCancel({ btnClassName, btnAction, btnText }) {
+/*export function ButtonCancel({ btnClassName, btnAction, btnText }) {
   return (
     <button
       id="btnCancel"
@@ -11,17 +11,18 @@ export function ButtonCancel({ btnClassName, btnAction, btnText }) {
       {btnText}
     </button>
   );
-}
+}*/
 
-export function ButtonConfirm({ btnClassName, btnText, btnAction }) {
+function Button({ btnClassName, text, onClick }) {
   return (
     <button
-      id="btnConfirm"
       className={btnClassName}
       type="button"
-      onClick={btnAction}
+      onClick={onClick}
     >
-      {btnText}
+      {text}
     </button>
   );
 }
+
+export default Button

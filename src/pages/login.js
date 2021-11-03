@@ -5,9 +5,9 @@ import { useHistory} from "react-router";
 import { Navigator } from "../router/navigator";
 import { InputLogin } from "../components/inputs";
 import { Select, SelectOption } from "../components/select";
-import { ButtonConfirm } from "../components/buttons";
+import Button from "../components/buttons";
 import { LoginWorker } from "../services/auth";
-import logoCinza from "../img/logo-cinza.png";
+import logo from "../img/logo.png";
 
 export default function Login() {
   const history = useHistory();
@@ -23,7 +23,7 @@ export default function Login() {
   return (
     <div className="login" data-login="login">
       <main className="mainLogin">
-        <img className="logoDaCasa" src={logoCinza} alt="logo - DaCasa" />
+        <img className="logoDaCasa" src={logo} alt="logo - DaCasa" />
         <h2 className="titleLogin"> LOGIN </h2>
 
         <div className="inputBoxes">
@@ -61,10 +61,10 @@ export default function Login() {
             inputType="password"
             inputPlaceHolder="Digite sua senha"
           />
-          <ButtonConfirm
+          <Button
             btnClassName="btnConfirm loginPage"
-            btnText="ENTRAR"
-            btnAction={() =>
+            text="ENTRAR"
+            onClick={() =>
               LoginWorker(workerInfo).then((json) => {
                 const role = json.role;
                 if (role === "salao") {
