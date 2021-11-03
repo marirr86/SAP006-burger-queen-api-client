@@ -1,0 +1,19 @@
+.products-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.products-btn button {
+  margin-left: 5px;
+}
+
+/*@media (max-width: 1024px) {
+  .products-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .products-btn button {
+    margin-left: 5px;
+  }
+}*/

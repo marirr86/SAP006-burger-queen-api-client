@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  border: red 1px solid;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/back-login.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.mainLogin {
+  width: 500px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.inputBoxes {
+  width: 100%;
+  margin: 60px;
+  text-align: center;
+}
+
+.titleLogin {
+  font-family: "Montserrat"sans-serif;
+  font-weight: 500;
+  color: #f1bcab;
+  padding-top: 3%;
+  text-align: center;
+}
+
+.selectLogin {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  margin-bottom: 1%;
+  background: url("../img/select.svg") no-repeat #c1c1c1b7;
+  background-position: 92%;
+  width: 63%;
+  border-radius: 10px;
+  padding: 0.65%;
+  font-size: 100%;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+.resetInput{
+  border: none;
+  background: #c1c1c1b7;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 100%;
+  font-weight: 600;
+  color:#000;
+  text-align: center;
+  align-self: center;
+}
+
+.eye {
+  position: absolute;
+  left: 75%;
+  padding-top: 4px;
+}
+
+.eye img {
+  padding-top: 5.5%;
+}
+
+.loginPage {
+  margin-top: 3%;
+  width: 15%;
+  padding: 1%;
+  font-weight: 700;
+}
+
+.logoDaCasa {
+  margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+  .logoLogin {
+    margin-top: 40%;
+  }
+
+  .mainLogin {
+    margin: 20% auto;
+  }
+
+  .selectLogin {
+    background-position: 93%;
+    width: 85%;
+    margin-bottom: 5%;
+    padding: 2%;
+  }
+
+  .inputLogin {
+    margin: 5%;
+    width: 95%;
+    text-align: center;
+  }
+
+  .resetInput {
+    padding: 2%;
+  }
+
+  .loginPage {
+    margin-top: 10%;
+    width: 30%;
+    padding: 3%;
+    font-weight: 700;
+  }
+
+  .eye {
+    left: 82%;
+  }
+}
